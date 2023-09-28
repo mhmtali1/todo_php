@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #8ea4c8, #7464af);
+    padding: 100px;
+}
+
+.todo_form{
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding:  20px;
+    background-color: white;
+    margin-top: 30px;
+    color: black;
+
+    gap: 10px;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+
+    min-width: 100%;
+}
+
+
+.todo_adds{
+    display: flex;
+    align-items: center;
+
+    min-width: 50%;
+    gap: 10px;
+}
+
+.todo_cont{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 50%;
+    gap: 20px;
+}
+
+
+button{
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: all 0.1s ease-in-out;
+    background-color: chocolate;
+    border: chocolate;
+    /* margin-left: 70px;
+    margin-right: 25px; */
+}
+
+button:active{
+    transform: scaleX(0.67);
+}
+
+button:hover{
+    transition: all .2s;
+    background-color: rgb(131, 65, 17);
+}
+
+.todo_div{
+    display: flex;
+    margin-top: 12px;
+}
+
+.todo_input{
+    border: 100px;
+    outline: 50px;
+    background: transparent;
+    padding: 12px;
+}
+
+body .box{
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: lightgrey;
+    border-radius: 8px;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.box img{
+    width: 50px;
+    margin-left: 60px;
+}
+
+
+.input{
+    border-radius: 8px;
+    background: white;
+}
+
+.todo_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px 30px;
+    border-radius: 8px;
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+
+    gap: 10px;
+}
+
+.todo_cb:checked ~ .todo_text{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.filter{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    width: 100%;
+
+    gap: 30px;
+    
+}
+
+.filter #filter_input{
+    padding: 10px;
+    border-radius: 10px;
+
+    min-width: 20%;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: large;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+    gap: 10px;
+
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.task{
+    display: flex;
+
+    min-width: 50%;
+
+    align-items: center;
+    gap: 5px;
+}
+
+.action{
+    display: flex;
+    margin-right: 10px;
+
+    gap: 10px;
+}
+
+.id{
+    text-align: center;
+    min-width: 20%;
+}
+
+.description{
+    text-align: center;
+    min-width: 60%;
+}
